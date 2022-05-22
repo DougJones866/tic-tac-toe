@@ -1,0 +1,105 @@
+.hidden {
+    display: none;
+}
+#win-screen, #draw-screen {
+    display: none;
+    background: rgba(10, 46, 54, 0.8);
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+#win-screen.show, #draw-screen.show{
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    min-width: 100vw;
+    min-height: 100vw;
+    z-index: 1000;
+}
+#win-screen .container, #draw-screen .container {
+    background: rgba(253, 255, 252, 1);
+    color: rgba(10, 46, 54, 1);
+    padding: 3rem;
+    margin-top: 2rem;
+}
+#gameboard {
+    background-color: rgba(253, 255, 252, 0.1);
+}
+#gameboard .row div {
+    text-align: center;
+}
+#gameboard div.col-xs-3 {
+    width: 33%;
+}
+.tile {
+    background: rgba(253, 255, 252, 0.2);
+    color: rgba(150, 154, 151, 1);
+    width: 90%;
+    min-width: 75px;
+    height: 90%;
+    min-height: 75px;
+    margin: 5px;
+    padding: 10px;
+    display: inline-block;
+    font-size: 5rem;
+    cursor: pointer;
+}
+.tile:hover {
+    color: rgba(39, 251, 107, 1);
+    background: rgba(253, 255, 252, 0.1);
+
+}
+.tile.played {
+    color: rgba(255, 186, 8, 1);
+    background: rgba(253, 255, 252, 0.1);
+    cursor: pointer;
+}
+.game-title {
+    text-align: center;
+}
+
+body {
+    background-color: rgba(10, 46, 54, 1);
+    width: 90%;
+    margin: auto;
+}
+html {
+    background-color: rgba(10, 46, 54, 1);
+}
+
+/* colors */
+
+.spring-green-color {
+    color: rgba(39, 251, 107, 1);
+}
+.baby-powder-color {
+    color: rgba(253, 255, 252, 1);
+}
+.phthalo-green-color {
+    color: rgba(10, 46, 54, 1);
+}
+
+.selective-yellow-color {
+    color: rgba(255, 186, 8, 1);
+}
+.spanish-gray-color {
+    color: rgba(150, 154, 151, 1);
+}
+
+.spring-green-bg {
+    background-color: rgba(39, 251, 107, 1);
+}
+.baby-powder-bg {
+    background-color: rgba(253, 255, 252, 1);
+}
+.phthalo-green-bg {
+    background-color: rgba(10, 46, 54, 1);
+}
+
+.selective-yellow-bg {
+    background-color: rgba(255, 186, 8, 1);
+}
+.spanish-gray-bg {
+    background-color: rgba(150, 154, 151, 1);
+}
